@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -33,4 +37,24 @@ a {
 
 .image {
     border-radius: 10px;
+}
+
+.form_input {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+.form_button {
+    width: 120px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
 }

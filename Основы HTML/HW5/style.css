@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.top {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #FFF;
+}
+
+.item {
+    padding: 40px 31px 25px 29px;
+    display: grid;
+    justify-content: start;
+}
+
+.item__central {
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.heading {
+    margin-top: 25px;
+    margin-bottom: 17px;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item__text {
+    width: 310px;
+    height: 42px;
+    flex-shrink: 0;
+    color: #666;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+.item__link {
+    margin-top: 25px;
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.5px;
+}
+
+.content {
+    background: #FAFAFA;
+    padding-top: 92px;
+    padding-bottom: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.secation__title {
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title__text {
+    width: 682px;
+    height: 48px;
+    margin-top: 19px;
+    margin-bottom: 55px;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.services {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+}
+
+.service {
+    width: 370px;
+    height: 549px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background: #FFF;
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.service__img {
+
+}
+
+.service__heading {
+
+}
+
+.service__text {
+    width: 310px;
+    height: 63px;
+    flex-shrink: 0;
+    margin-top: 22px; 
+    margin-bottom: 39px;
+    text-align: center;
+}
+
+.service__button {
+    margin-bottom: 50px;
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;  
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+}

@@ -74,3 +74,36 @@
     font-weight: 700;
     line-height: normal;
 }
+
+.people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.women {
+	display: flex;
+    align-items: center;
+    background-image: url(img/1_fon.svg);
+}
+
+.men {
+	display: flex;
+    align-items: center;
+    background-image: url(img/2_fon.svg);
+}
+
+.kids {
+	display: flex;
+    align-items: center;
+    background-image: url(img/3_fon.svg);
+}
+
+.accesories {
+	display: flex;
+    align-items: center;
+    background-image: url(img/4_fon.svg);
+}
+
+.offer__img {
+    position: relative;
+}

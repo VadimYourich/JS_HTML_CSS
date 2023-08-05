@@ -75,6 +75,11 @@
     line-height: normal;
 }
 
+.offer {
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+
 .people {
     display: flex;
     justify-content: space-between;
@@ -83,27 +88,52 @@
 .women {
 	display: flex;
     align-items: center;
-    background-image: url(img/1_fon.svg);
+    background-image: url(img/women.png);
 }
 
-.men {
+.man {
 	display: flex;
     align-items: center;
-    background-image: url(img/2_fon.svg);
+    background-image: url(img/men.png);
 }
 
 .kids {
 	display: flex;
     align-items: center;
-    background-image: url(img/3_fon.svg);
+    background-image: url(img/kids.png);
 }
 
 .accesories {
 	display: flex;
     align-items: center;
-    background-image: url(img/4_fon.svg);
+    background-image: url(img/accesories.png);
+    margin-top: 30px;
 }
 
 .offer__img {
     position: relative;
+    fill: rgba(33, 22, 22, 0.70);
+}
+
+.tekst_sverhu {
+    position: absolute;
+}
+
+.subtitle_accesories {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title_accesories {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

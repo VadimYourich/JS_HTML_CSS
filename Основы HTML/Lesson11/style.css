@@ -89,18 +89,21 @@
 	display: flex;
     align-items: center;
     background-image: url(img/women.png);
+    justify-content: center;
 }
 
 .man {
 	display: flex;
     align-items: center;
     background-image: url(img/men.png);
+    justify-content: center;
 }
 
 .kids {
 	display: flex;
     align-items: center;
     background-image: url(img/kids.png);
+    justify-content: center;
 }
 
 .accesories {
@@ -108,6 +111,7 @@
     align-items: center;
     background-image: url(img/accesories.png);
     margin-top: 30px;
+    justify-content: center;
 }
 
 .offer__img {
@@ -117,9 +121,13 @@
 
 .tekst_sverhu {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-.subtitle_accesories {
+.subtitle_offer {
     color: #FFF;
     text-align: center;
     font-family: Lato;
@@ -129,11 +137,73 @@
     line-height: normal;
 }
 
-.title_accesories {
+.title_offer {
     color: #F16D7F;
     font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
+    line-height: normal;
+}
+
+.products {
+    display: flex;
+}
+
+.title_products {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tekst_products {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cards_products {
+    display: grid;
+    width: 360px;
+}
+
+.img_product2_fon {
+    position: relative;
+}
+
+.img_product {
+    position: absolute;
+}
+
+.title_product {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.desc_product {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.price_product {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
 }

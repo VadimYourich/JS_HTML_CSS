@@ -173,10 +173,10 @@ img {
 
 .page_img {
     width: 50%;
-    min-height: 764px;
+    /* min-height: 764px; */
     background-size: cover;
     background-position: center;
-    background-image: url(img/Layer_57-removebg-preview\ 1.svg);
+    /* background-image: url(img/Layer_57-removebg-preview\ 1.svg); */
 }
 
 .page_text {
@@ -244,6 +244,8 @@ img {
 .people {
     display: flex;
     justify-content: space-between;
+    gap: 2.63%;
+    /* width: 31.58%; */
 }
 
 .women {
@@ -251,6 +253,7 @@ img {
     align-items: center;
     background-image: url(img/women.png);
     justify-content: center;
+    width: 31.58%;
 }
 
 .man {
@@ -258,6 +261,7 @@ img {
     align-items: center;
     background-image: url(img/men.png);
     justify-content: center;
+    width: 31.58%;
 }
 
 .kids {
@@ -265,13 +269,14 @@ img {
     align-items: center;
     background-image: url(img/kids.png);
     justify-content: center;
+    width: 31.58%;
 }
 
 .accesories {
 	display: flex;
     align-items: center;
     background-image: url(img/accesories.png);
-    margin-top: 30px;
+    margin-top: 2.7%;
     justify-content: center;
 }
 
@@ -307,11 +312,11 @@ img {
     line-height: normal;
 }
 
-.products {
+/* .products {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .title_products {
     color: #222;
@@ -320,6 +325,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: center;
 }
 
 .tekst_products {
@@ -330,12 +336,13 @@ img {
     font-weight: 400;
     line-height: normal;
     margin-top: 6px;
+    text-align: center;
 }
 
 .cards_products {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(auto-fit, 360px);
     justify-content: center;
     margin-top: 48px;
     margin-bottom: 48px;
@@ -400,26 +407,30 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 15px 39px 14px;
+    padding: 15px 39px 15px;
     border-color: rgba(255, 106, 106, 1);  
     border-bottom-width: 1px;
     margin-bottom: 60px;
     background: #FFF;
+    margin-left: calc(50% - 109px);
+    margin-right: calc(50% - 109px);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        padding-left: 32px;
+        padding-right: 18px;
+    }
+
     .page {
         background: #F1E4E6;
         display: flex;
         max-width: 1140px;
     }
+
+    /* .page_img {
+        min-height: 368px;
+    } */
 }
     
 
-    /* .page_img {
-        width: 50%;
-        min-height: 368px;
-        background-size: cover;
-        background-position: center;
-        background-image: url(img/Layer_57-removebg-preview\ 768-1024.png);
-    } */

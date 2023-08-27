@@ -52,6 +52,24 @@ body {
     gap: 33px;
 }
 
+.shop {
+    position: relative;
+}
+
+.shop::after {
+    content: "5";
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    background: #f16d7f;
+    text-align: center;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+}
+
 img {
     max-width: 100%;
 }

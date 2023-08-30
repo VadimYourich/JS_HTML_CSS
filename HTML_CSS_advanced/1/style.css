@@ -1,3 +1,36 @@
-h1 {
-  color: rgb(96, 126, 16);
+.nav__link {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.subheading {
+  color: #8A2BE2;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+.nav__link {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content__item {
+  width: 285px;
+  height: 200px;
+  border: 1px solid #000;
 }/*# sourceMappingURL=style.css.map */

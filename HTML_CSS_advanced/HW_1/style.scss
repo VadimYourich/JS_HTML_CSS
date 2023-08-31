@@ -186,7 +186,48 @@ img {
     margin-top: 24px;
 }
 
+.head__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F3F4;
+    min-height: 148px;
 
+    .head__nav__heading {
+        color: #F16D7F;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .head__nav__link {
+        color: #636363;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .head__nav__link_site {
+        color: #F16D7F;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+}
+
+.image__slide {
+    background-color: rgba(247, 247, 247, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .page {
     background: #F1E4E6;

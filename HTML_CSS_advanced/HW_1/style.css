@@ -181,6 +181,39 @@ img {
   line-height: normal;
 }
 
+.filter-sort {
+  height: 132px;
+  position: relative;
+}
+
+.filter {
+  padding: 13px 16px 16px;
+  width: 360px;
+  position: absolute;
+  top: 39px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.filter[open] .filter__heading {
+  color: #EF5B70;
+}
+.filter[open] path {
+  fill: #EF5B70;
+}
+.filter__summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.filter__heading {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .image__slide {
   background-color: rgb(247, 247, 247);
   display: flex;
@@ -455,6 +488,14 @@ img {
   margin-bottom: 48px;
 }
 
+.cards_products_catalog {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, 360px);
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
 .product {
   display: flex;
   justify-items: center;
@@ -542,21 +583,6 @@ img {
   line-height: normal;
 }
 
-/* .button {
-    color: #F26376;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 15px 39px 15px;
-    border-color: rgba(255, 106, 106, 1);  
-    border-bottom-width: 1px;
-    margin-bottom: 60px;
-    background: #FFF;
-    margin-left: calc(50% - 109px);
-    margin-right: calc(50% - 109px);
-} */
 .button {
   margin-top: 48px;
   margin-bottom: 60px;

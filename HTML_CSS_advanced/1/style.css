@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav__link {
   font-family: sans-serif;
   font-style: normal;
@@ -33,4 +34,17 @@
   width: 285px;
   height: 200px;
   border: 1px solid #000;
+}
+
+.list {
+  display: flex;
+}
+.list__title {
+  cursor: pointer;
+  list-style-type: "→";
+}
+.list[open] .list__title {
+  color: #eee;
+  background-color: #333;
+  list-style-type: " ↓ ";
 }/*# sourceMappingURL=style.css.map */

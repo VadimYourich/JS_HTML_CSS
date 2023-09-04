@@ -37,3 +37,20 @@
         border: $borderContent;
     }
 }
+
+.list {
+    display: flex;
+
+    &__title {
+        // list-style: none;
+        cursor: pointer;
+        list-style-type: "\2192";
+    }
+
+    &[open] &__title {
+        color: #eee;
+        background-color: #333;
+        list-style-type: " ↓ ";
+        // content: " ↓ ";
+    }
+}

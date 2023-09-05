@@ -7,6 +7,11 @@
 * {
   padding: 0;
   margin: 0;
+  max-width: 1400px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .subheading {
@@ -47,4 +52,35 @@
   color: #eee;
   background-color: #333;
   list-style-type: " ↓ ";
+}
+
+.content2 {
+  min-height: 700px;
+  background-color: aquamarine;
+}
+
+.parallax {
+  min-height: 350px;
+  background-image: url(https://img.freepik.com/free-photo/aerial-shot-of-the-macarthur-maze-oakland-california-usa_181624-35498.jpg?w=1380&t=st=1693912247~exp=1693912847~hmac=a0556cdf471c1c49a1880e077d8d5b8d0c9db7b493e08dce1981da2031c5a258);
+  background-attachment: fixed;
+}
+
+.menu {
+  position: sticky;
+  width: 20%;
+  top: 30%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+.main {
+  margin-left: 10%;
+}
+
+.item77 {
+  height: 800px;
+  -webkit-clip-path: circle(350px at 500px 350px);
+          clip-path: circle(350px at 500px 350px);
+  background-image: url(https://img.freepik.com/free-photo/aerial-shot-of-the-macarthur-maze-oakland-california-usa_181624-35498.jpg?w=1380&t=st=1693912247~exp=1693912847~hmac=a0556cdf471c1c49a1880e077d8d5b8d0c9db7b493e08dce1981da2031c5a258);
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */

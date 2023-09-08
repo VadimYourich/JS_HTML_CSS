@@ -370,6 +370,46 @@ img {
     align-items: center;
 }
 
+.cart {
+    margin-top: 96px;
+    margin-bottom: 128px;
+    display: flex;
+
+
+    &__selected {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 57%;
+
+        &_product {
+            display: flex;
+        }
+
+        &_button {
+            display: flex;
+            margin-top: 32px;
+            justify-content: space-between;
+        }
+    }
+
+    &__purchase {
+        display: flex;
+        flex-direction: column;
+        width: 43%;
+        padding-left: 11%;
+        gap: 57px;
+
+        .confirmation__form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+
 .productDescription-box {
     display: flex;
     flex-direction: column;

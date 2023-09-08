@@ -89,3 +89,65 @@ html {
     background-image: url(https://img.freepik.com/free-photo/aerial-shot-of-the-macarthur-maze-oakland-california-usa_181624-35498.jpg?w=1380&t=st=1693912247~exp=1693912847~hmac=a0556cdf471c1c49a1880e077d8d5b8d0c9db7b493e08dce1981da2031c5a258);
     background-size: cover;
 }
+
+.seminar3 {
+    width: 500px;
+    margin: 100px auto;
+}
+
+.main_heading {
+    font-family: 'merriweatherbold';
+    color: #a32e2e;
+    // -webkit-text-stroke: 5px;
+    // -webkit-text-stroke-color: rgb(255, 115, 0);
+    // -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke: 1px #2e2ea3;
+    animation: neon 2s;
+}
+
+.text {
+    font-family: 'merriweatherlight';
+}
+
+.text2 {
+    font-family: 'open_sansitalic';
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 200px 100px;
+    border-color: transparent transparent red transparent;
+    margin: 30px auto;
+
+}
+
+
+
+.name {
+    width: 260px;
+    height: 100px;
+    border-style: solid;
+    border-image-width: 15px;
+    border-image-source: url(/HW_1/img/accesories.png);
+    border-image-slice: 30 20;
+    border-image-repeat: round;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    height: 200px;
+    padding: 25px;
+}
+
+.gradient {
+
+    width: 50%;
+    margin: 0 auto;
+    border: 10px solid transparent;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px, transparent 30px, transparent 40px);
+}

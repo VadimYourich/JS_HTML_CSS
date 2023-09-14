@@ -37,7 +37,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.cart__selected .cart-product .cart-product__text .cart-product__price {
+.cart__selected .cart-product .cart-product__text .cart-product__specifications {
   color: #575757;
   font-family: Lato;
   font-size: 22px;
@@ -45,7 +45,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.cart__selected .cart-product .cart-product__text .price__value {
+.cart__selected .cart-product .cart-product__text .cart-product__price-value {
   color: #EF5B70;
   font-family: Lato;
   font-size: 22px;
@@ -53,15 +53,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.cart__selected .cart-product .cart-product__text .cart-product__color {
-  color: #575757;
-  font-family: Lato;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.cart__selected .cart-product .cart-product__text .color__value {
+.cart__selected .cart-product .cart-product__text .cart-product__color-value {
   color: #6F6E6E;
   font-family: Lato;
   font-size: 22px;
@@ -69,15 +61,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.cart__selected .cart-product .cart-product__text .cart-product__quantity {
-  color: #575757;
-  font-family: Lato;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.cart__selected .cart-product .cart-product__text .quantity__value {
+.cart__selected .cart-product .cart-product__text .cart-product__quantity-value {
   color: #656565;
   font-family: Lato;
   font-size: 18px;

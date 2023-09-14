@@ -39,7 +39,7 @@
                     }
                 }
 
-                .cart-product__price {
+                .cart-product__specifications {
                     color: #575757;
                     font-family: Lato;
                     font-size: 22px;
@@ -48,7 +48,7 @@
                     line-height: normal;
                 }
 
-                .price__value {
+                .cart-product__price-value {
                     color: #EF5B70;
                     font-family: Lato;
                     font-size: 22px;
@@ -57,16 +57,7 @@
                     line-height: normal;
                 }
 
-                .cart-product__color {
-                    color: #575757;
-                    font-family: Lato;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-
-                .color__value {
+                .cart-product__color-value {
                     color: #6F6E6E;
                     font-family: Lato;
                     font-size: 22px;
@@ -75,16 +66,7 @@
                     line-height: normal;
                 }
 
-                .cart-product__quantity {
-                    color: #575757;
-                    font-family: Lato;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-
-                .quantity__value {
+                .cart-product__quantity-value {
 
                     color: #656565;
                     font-family: Lato;

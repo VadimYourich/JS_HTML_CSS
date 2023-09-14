@@ -1,0 +1,158 @@
+.registration {
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.reg {
+    display: flex;
+    gap: 128px;
+
+    // --- data ---
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__datahead {
+        padding-bottom: 16px;
+        color: #222;
+        font-size: 16px;
+        @extend %styleText;
+        font-weight: 300;
+    }
+
+    &__input {
+        width: 360px;
+        height: 44px;
+        margin-top: 5px;
+        margin-bottom: 16px;
+        padding-left: 17px;
+        stroke-width: 1px;
+        stroke: #A4A4A4;
+        border: 1px solid #A4A4A4;
+    }
+
+    &__input::placeholder,
+    &__datanote {
+        color: #B1B1B1;
+        font-size: 13px;
+        @extend %styleText;
+        font-weight: 300;
+    }
+
+    &__datanote {
+        width: 360px;
+    }
+
+    &__boxchecks {
+        width: 132px;
+        height: 17px;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__label {
+        color: #000;
+        font-size: 11px;
+        @extend %styleText;
+        font-weight: 300;
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+
+    // &__label::before {
+    //     padding-right: 10px;
+    //     content: url(img/reg/circle.svg);
+    // }
+
+    &__label::before {
+        content: '';
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #A4A4A4;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% %50%;
+    }
+
+    &__checkbox:checked+label::before {
+        border-color: $colorDesign;
+        background-color: $colorDesign;
+    }
+
+    &__checkbox:checked+label {
+        color: $colorDesign;
+    }
+
+    &__button {
+        margin-top: 7px;
+        width: 167px;
+        height: 50px;
+        border: 1px solid #222;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: #222;
+        font-size: 14px;
+        @extend %styleText;
+        font-weight: 400;
+        transition: all 0.3s;
+    }
+
+    &__button:hover {
+        color: white;
+        background-color: $colorDesign;
+        border-color: $colorDesign;
+    }
+
+    &__button:hover path {
+        fill: white;
+    }
+
+    // --- info ---
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    &__infohead,
+    &__infonote,
+    &__li {
+        color: #000;
+        font-size: 24px;
+        @extend %styleText;
+        font-weight: 300;
+    }
+
+    &__ul {
+        list-style-type: none;
+    }
+
+    &__li:not(:last-child) {
+        padding-bottom: 16px;
+    }
+
+    &__li::before {
+        padding-right: 23px;
+        content: url(img/reg/vr.jpg);
+    }
+}

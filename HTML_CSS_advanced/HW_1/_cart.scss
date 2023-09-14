@@ -129,132 +129,135 @@
         display: flex;
         flex-direction: column;
         padding-left: 11%;
-        gap: 57px;
 
-        .address__form {
-            width: 360px;
-            height: 272px;
+        &__head {
             margin-top: 17px;
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__form {
+            width: 360px;
+            // height: 272px;
+            margin-top: 20px;
+            margin-bottom: 57px;
             display: flex;
             flex-direction: column;
             gap: 21px;
-
-            .address__form_head {
-                color: #222;
-                font-family: Lato;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-            }
-
-            .address__form_text {
-                height: 44px;
-                padding-left: 16px;
-                border: 1px solid #A4A4A4;
-            }
-
-            .address__form_text[type=text]::placeholder {
-                color: #222;
-                font-family: Lato;
-                font-size: 13px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-            }
-
-            .grey[type=text]::placeholder {
-                color: #B1B1B1;
-            }
-
-            .form__link {
-                background-color: rgba(255, 255, 255, 1);
-                width: 102px;
-                height: 35px;
-                margin-top: 3px;
-                border: 1px solid #A4A4A4;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #4A4A4A;
-                font-family: Lato;
-                font-size: 11px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-                transition: all 0.3s;
-
-                &:hover {
-                    color: white;
-                    background: $colorDesign;
-                    border-color: $colorDesign;
-                }
-            }
         }
 
-        .confirmation__form {
-            width: 360px;
-            height: 214px;
-            background-color: #F5F3F3;
+        &__input {
+            height: 44px;
+            padding-left: 16px;
+            border: 1px solid #A4A4A4;
+        }
+
+        &__input[type=text]::placeholder {
+            color: #222;
+            font-family: Lato;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__input_color[type=text]::placeholder {
+            color: #B1B1B1;
+        }
+
+        &__btn {
+            background-color: rgba(255, 255, 255, 1);
+            width: 102px;
+            height: 35px;
+            margin-top: 3px;
+            border: 1px solid #A4A4A4;
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
             justify-content: center;
-            gap: 12px;
+            align-items: center;
+            color: #4A4A4A;
+            font-family: Lato;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            transition: all 0.3s;
 
-            .sub_total {
-                padding-right: 34px;
-                color: #4A4A4A;
-                font-family: Lato;
-                font-size: 11px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-
-            .grand_total {
-                padding-right: 37px;
-                color: #222;
-                font-family: Lato;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-            }
-
-            .grand_total_Design {
-                color: $colorDesign;
-                font-family: Lato;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-            }
-
-            .check_button {
-                width: 273px;
-                height: 50px;
-                margin-right: 43px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: $colorDesign;
-                color: #FFF;
-                font-family: Lato;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-                transition: all 0.3s;
-
-                &:hover {
-                    color: $colorDesign;
-                    background-color: white;
-                    border-style: solid;
-                    border-color: $colorDesign;
-                    height: 48px;
-                }
+            &:hover {
+                color: white;
+                background: $colorDesign;
+                border-color: $colorDesign;
             }
         }
     }
+
+
+    .confirmation-form {
+        width: 360px;
+        height: 214px;
+        background-color: #F5F3F3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 12px;
+
+        &__subtitle {
+            padding-right: 34px;
+            color: #4A4A4A;
+            font-family: Lato;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__price {
+            padding-right: 37px;
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__price_color {
+            color: $colorDesign;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        &__btn {
+            width: 273px;
+            height: 50px;
+            margin-right: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $colorDesign;
+            color: #FFF;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $colorDesign;
+                background-color: white;
+                border-style: solid;
+                border-color: $colorDesign;
+                height: 48px;
+            }
+        }
+    }
+
 }

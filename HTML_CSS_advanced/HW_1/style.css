@@ -113,17 +113,9 @@
   display: flex;
   flex-direction: column;
   padding-left: 11%;
-  gap: 57px;
 }
-.cart__purchase .address__form {
-  width: 360px;
-  height: 272px;
+.cart__purchase__head {
   margin-top: 17px;
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-}
-.cart__purchase .address__form .address__form_head {
   color: #222;
   font-family: Lato;
   font-size: 16px;
@@ -131,12 +123,20 @@
   font-weight: 300;
   line-height: normal;
 }
-.cart__purchase .address__form .address__form_text {
+.cart__purchase__form {
+  width: 360px;
+  margin-top: 20px;
+  margin-bottom: 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.cart__purchase__input {
   height: 44px;
   padding-left: 16px;
   border: 1px solid #A4A4A4;
 }
-.cart__purchase .address__form .address__form_text[type=text]::-moz-placeholder {
+.cart__purchase__input[type=text]::-moz-placeholder {
   color: #222;
   font-family: Lato;
   font-size: 13px;
@@ -144,7 +144,7 @@
   font-weight: 300;
   line-height: normal;
 }
-.cart__purchase .address__form .address__form_text[type=text]::placeholder {
+.cart__purchase__input[type=text]::placeholder {
   color: #222;
   font-family: Lato;
   font-size: 13px;
@@ -152,13 +152,13 @@
   font-weight: 300;
   line-height: normal;
 }
-.cart__purchase .address__form .grey[type=text]::-moz-placeholder {
+.cart__purchase__input_color[type=text]::-moz-placeholder {
   color: #B1B1B1;
 }
-.cart__purchase .address__form .grey[type=text]::placeholder {
+.cart__purchase__input_color[type=text]::placeholder {
   color: #B1B1B1;
 }
-.cart__purchase .address__form .form__link {
+.cart__purchase__btn {
   background-color: rgb(255, 255, 255);
   width: 102px;
   height: 35px;
@@ -175,12 +175,12 @@
   line-height: normal;
   transition: all 0.3s;
 }
-.cart__purchase .address__form .form__link:hover {
+.cart__purchase__btn:hover {
   color: white;
   background: #F16D7F;
   border-color: #F16D7F;
 }
-.cart__purchase .confirmation__form {
+.cart .confirmation-form {
   width: 360px;
   height: 214px;
   background-color: #F5F3F3;
@@ -190,7 +190,7 @@
   justify-content: center;
   gap: 12px;
 }
-.cart__purchase .confirmation__form .sub_total {
+.cart .confirmation-form__subtitle {
   padding-right: 34px;
   color: #4A4A4A;
   font-family: Lato;
@@ -199,7 +199,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.cart__purchase .confirmation__form .grand_total {
+.cart .confirmation-form__price {
   padding-right: 37px;
   color: #222;
   font-family: Lato;
@@ -208,7 +208,7 @@
   font-weight: 300;
   line-height: normal;
 }
-.cart__purchase .confirmation__form .grand_total_Design {
+.cart .confirmation-form__price_color {
   color: #F16D7F;
   font-family: Lato;
   font-size: 16px;
@@ -216,7 +216,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.cart__purchase .confirmation__form .check_button {
+.cart .confirmation-form__btn {
   width: 273px;
   height: 50px;
   margin-right: 43px;
@@ -232,7 +232,7 @@
   line-height: normal;
   transition: all 0.3s;
 }
-.cart__purchase .confirmation__form .check_button:hover {
+.cart .confirmation-form__btn:hover {
   color: #F16D7F;
   background-color: white;
   border-style: solid;
@@ -307,11 +307,6 @@ body {
 
 img {
   max-width: 100%;
-}
-
-.top {
-  position: relative;
-  overflow: hidden;
 }
 
 /* .container {

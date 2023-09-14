@@ -1,12 +1,8 @@
-.registration {
-    margin-top: 64px;
-    margin-bottom: 96px;
-}
-
 .reg {
     display: flex;
     gap: 128px;
-
+    margin-top: 64px;
+    margin-bottom: 96px;
     // --- data ---
 
     &__data {
@@ -18,9 +14,11 @@
     &__datahead {
         padding-bottom: 16px;
         color: #222;
+        font-family: Lato;
         font-size: 16px;
-        @extend %styleText;
+        font-style: normal;
         font-weight: 300;
+        line-height: normal;
     }
 
     &__input {
@@ -37,9 +35,11 @@
     &__input::placeholder,
     &__datanote {
         color: #B1B1B1;
+        font-family: Lato;
         font-size: 13px;
-        @extend %styleText;
+        font-style: normal;
         font-weight: 300;
+        line-height: normal;
     }
 
     &__datanote {
@@ -62,7 +62,7 @@
     &__label {
         color: #000;
         font-size: 11px;
-        @extend %styleText;
+
         font-weight: 300;
         display: inline-flex;
         align-items: center;
@@ -109,21 +109,28 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
-        color: #222;
+
         font-size: 14px;
-        @extend %styleText;
+        color: #FFF;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
         font-weight: 400;
+        line-height: normal;
+        font-weight: 400;
+        background-color: $colorDesign;
+        border-color: $colorDesign;
         transition: all 0.3s;
     }
 
     &__button:hover {
-        color: white;
-        background-color: $colorDesign;
-        border-color: $colorDesign;
+        color: #222;
+        background-color: white;
+        // border-color: $colorDesign;
     }
 
     &__button:hover path {
-        fill: white;
+        fill: #222;
     }
 
     // --- info ---
@@ -138,8 +145,11 @@
     &__infonote,
     &__li {
         color: #000;
+        font-family: Lato;
         font-size: 24px;
-        @extend %styleText;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
         font-weight: 300;
     }
 
@@ -153,6 +163,6 @@
 
     &__li::before {
         padding-right: 23px;
-        content: url(img/reg/vr.jpg);
+        content: url(img/Vector.svg);
     }
 }

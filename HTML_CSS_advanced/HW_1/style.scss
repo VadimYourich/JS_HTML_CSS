@@ -1,6 +1,6 @@
 @import 'vars';
-@import 'registration';
 @import 'cart';
+@import 'registration';
 
 * {
     margin: 0;
@@ -198,7 +198,6 @@ img {
         margin-top: 24px;
     }
 }
-
 
 .head__nav {
     display: flex;

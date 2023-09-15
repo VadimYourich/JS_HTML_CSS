@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.content__item {
+  min-height: 200px;
+  border: 1px solid #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content__item {
+    min-height: calc(33vh - 8px);
+  }
+}/*# sourceMappingURL=style5.css.map */

@@ -1,0 +1,43 @@
+.cards_products_catalog {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.products__nav {
+    margin-top: 48px;
+    margin-bottom: 96px;
+    gap: 16px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 284px;
+    height: 43px;
+    margin-left: calc(50% - 142px);
+    margin-right: calc(50% - 142px);
+    background-color: #FFF;
+
+    text-align: center;
+    text-decoration: none;
+
+    &__link {
+        color: #C4C4C4;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__link-open {
+        color: $colorSelectSite;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}

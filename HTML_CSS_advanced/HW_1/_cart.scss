@@ -2,97 +2,101 @@
     margin-top: 96px;
     margin-bottom: 128px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
     &__selected {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 40px;
         width: 57%;
 
-        .cart-product {
+        &__product {
             display: flex;
             filter: drop-shadow(17px 19px 11px rgba(0, 0, 0, 0.13));
 
-            .cart-product__text {
-                width: 390px;
-                display: flex;
-                flex-direction: column;
-                fill: #F8F8F8;
-                padding: 22px 22px 62px 31px;
-                gap: 6px;
-                background: #FFF;
-
-                .cart-product__text_top {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 36px;
-
-                    .cart-product__title {
-                        color: #222;
-                        font-family: Lato;
-                        font-size: 24px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                    }
-                }
-
-                .cart-product__specifications {
-                    color: #575757;
-                    font-family: Lato;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-
-                .cart-product__price-value {
-                    color: #EF5B70;
-                    font-family: Lato;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-
-                .cart-product__color-value {
-                    color: #6F6E6E;
-                    font-family: Lato;
-                    font-size: 22px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
-
-                .cart-product__quantity-value {
-
-                    color: #656565;
-                    font-family: Lato;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    width: 44px;
-                    height: 25px;
-                    margin-left: 24px;
-
-                    outline: 0;
-                    border: 1px solid #EAEAEA;
-                    text-align: center;
-
-                }
-            }
         }
 
-        &_button {
+        &__text {
+            width: 390px;
+            display: flex;
+            flex-direction: column;
+            fill: #F8F8F8;
+            padding: 22px 22px 62px 31px;
+            gap: 6px;
+            background: #FFF;
+        }
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 36px;
+
+        }
+
+        &__title {
+            color: #222;
+            font-family: Lato;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__specifications {
+            color: #575757;
+            font-family: Lato;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__price-value {
+            color: #EF5B70;
+            font-family: Lato;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__color-value {
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__quantity-value {
+
+            color: #656565;
+            font-family: Lato;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 44px;
+            height: 25px;
+            margin-left: 24px;
+
+            outline: 0;
+            border: 1px solid #EAEAEA;
+            text-align: center;
+
+        }
+
+        &__button {
             display: flex;
             margin-top: 32px;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 192px;
 
-            .selected__button_left,
-            .selected__button_right {
+            &_left,
+            &_right {
                 display: block;
                 height: 50px;
                 display: flex;
@@ -115,11 +119,11 @@
                 }
             }
 
-            .selected__button_left {
+            &_left {
                 width: 235px;
             }
 
-            .selected__button_right {
+            &_right {
                 width: 225px;
             }
         }
@@ -192,18 +196,17 @@
                 border-color: $colorDesign;
             }
         }
-    }
 
-
-    .confirmation-form {
-        width: 360px;
-        height: 214px;
-        background-color: #F5F3F3;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        gap: 12px;
+        &__confirmation {
+            width: 360px;
+            height: 214px;
+            background-color: #F5F3F3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 12px;
+        }
 
         &__subtitle {
             padding-right: 34px;
@@ -234,7 +237,7 @@
             line-height: normal;
         }
 
-        &__btn {
+        &__button {
             width: 273px;
             height: 50px;
             margin-right: 43px;
@@ -260,4 +263,34 @@
         }
     }
 
+
 }
+
+@media (max-width: 1139px) {
+    .cart {
+        gap: 64px;
+
+        &__selected {
+            width: 96%;
+
+            &__button {
+                justify-content: center;
+                gap: 49px;
+            }
+        }
+
+        &__purchase {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            align-items: center;
+            gap: 16px;
+
+            &__confirmation {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {}

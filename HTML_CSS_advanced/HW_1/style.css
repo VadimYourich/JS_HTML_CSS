@@ -1116,10 +1116,46 @@
   align-items: center;
 }
 
+.gallerybox {
+  min-height: 776px;
+  background: #F7F7F7;
+}
+.gallerybox__img {
+  padding-top: 11px;
+  padding-bottom: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallerybox__link {
+  position: relative;
+  top: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.gallerybox__link-icon {
+  width: 47px;
+  height: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallerybox__link-icon path {
+  transition: fill 0.3s;
+}
+.gallerybox__link-icon:hover path {
+  fill: #F16D7F;
+}
+
 .productDescription-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: calc(50% - 570px);
+  margin-right: calc(50% - 570px);
   padding-top: 64.54px;
   padding-bottom: 64.5px;
   transform: translateY(-65px);

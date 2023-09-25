@@ -26,8 +26,8 @@ body {
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    max-width: 1600px;
-    margin: 0 auto;
+    // max-width: 1600px;
+    // margin: 0 auto;
     position: relative;
     /* overflow: hidden; */
 }
@@ -107,6 +107,7 @@ img {
 
 .header__checkbox:checked~.mobile-menu {
     right: 0;
+    display: block;
 }
 
 .mobile-menu {
@@ -123,6 +124,7 @@ img {
     padding: 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: none;
 
     &__link-site {
         -webkit-box-align: center;

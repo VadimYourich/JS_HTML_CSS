@@ -513,7 +513,6 @@
 
 .filter {
   padding: 13px 16px 16px;
-  width: 360px;
   position: absolute;
   top: 39px;
   z-index: 1;
@@ -522,6 +521,7 @@
 .filter[open] {
   background: #FFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 360px;
 }
 .filter[open] .filter__heading {
   color: #EF5B70;
@@ -1364,8 +1364,6 @@ body {
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
-  max-width: 1600px;
-  margin: 0 auto;
   position: relative;
   /* overflow: hidden; */
 }
@@ -1425,6 +1423,7 @@ img {
 
 .header__checkbox:checked ~ .mobile-menu {
   right: 0;
+  display: block;
 }
 
 .mobile-menu {
@@ -1438,6 +1437,7 @@ img {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   padding: 32px;
   box-sizing: border-box;
+  display: none;
 }
 .mobile-menu__link-site {
   align-items: center;

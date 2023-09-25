@@ -6,7 +6,6 @@
 
 .filter {
     padding: 13px 16px 16px;
-    width: 360px;
     position: absolute;
     top: 39px;
     z-index: 1;
@@ -15,6 +14,7 @@
     &[open] {
         background: #FFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        width: 360px;
     }
 
     &[open] .filter__heading {
